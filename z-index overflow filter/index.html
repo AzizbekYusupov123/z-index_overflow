@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            background-color: red;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            z-index: 3;
+            display: inline-block;
+        }
+
+        .box2 {
+            width: 90px;
+            height: 90px;
+            background-color: green;
+            position: relative;
+            bottom: 10px;
+            z-index: 1;
+            right: 40px;
+            display: inline-block;
+        }
+
+        .overflow {
+            overflow: auto;
+            height: 90px;
+            width: 150px;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+        .box {
+            height: 3000px;
+            width: 2000px;
+            border: 2px red solid;
+            background-image: url(../images/photo_2023-04-17_20-04-01.jpg);
+            background-repeat: no-repeat;
+            background-size: 100px 200px;
+            background-position: right top;
+        }
+
+
+        .img img {
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            opacity: 60%;
+        }
+
+        .gradient {
+            height: 500px;
+            width: 800px;
+            background-image: linear-gradient( to bottom right, red, blue, green, yellow);
+        }
+
+        .radialg {
+            height: 500px;
+            width: 800px;
+            background-image: radial-gradient(red, blue, green, yellow);
+        }
+
+        .blur {
+            filter: blur(5px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="overflow">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ea reprehenderit eveniet! Repellat provident,
+        placeat tenetur quia eius exercitationem cumque, accusantium facere maxime quae sapiente culpa optio voluptate
+        ea suscipit similique assumenda architecto cupiditate quas minus expedita. Soluta fuga officia enim quae ad
+        velit labore obcaecati, veritatis esse, nihil libero.
+    </div>
+    <div class="box">
+        Quti
+    </div>
+    <div class="img">
+        <img src="../images/photo_2023-04-17_20-04-02.jpg" alt="">
+    </div>
+    <div class="gradient"></div>
+    <div class="radialg"></div>
+    <div class="blur">
+        <img src="../images/historia reiss icon aesthetic.jfif" alt="">
+    </div>
+</body>
+
+</html>
